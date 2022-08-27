@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>
+            Todo List
+        </title>
+        <!-- Font Awesome Library -->
+        <script src="https://kit.fontawesome.com/abe0982d48.js" crossorigin="anonymous"></script>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        
+
+        <main>
+
+            <audio id="wrong-one">
+                <source src="./audio/failed.wav" type="audio/wav">
+            </audio>
+            <audio id="success">
+                <source src="./audio/success.wav" type="audio/wav">
+            </audio>
+            <!-- header -->
+            <div id="text-box">
+                <!-- form/input your task -->
+                <form action="">
+                    <input type="text" id="input-box" placeholder="Type your todo list" required>
+                    
+                    <button type="submit" id="submit-btn">
+                        <i class="fas fa-plus-circle"></i>
+                    </button>
+                </form>
+                <!-- Basic functionalities in the header part -->
+                <div id="text-box-functions">
+                    <button id="complete-all-tasks">
+                        <i class="fas fa-check-double"></i>
+                        <span>Complete all tasks</span>
+                    </button>
+
+                    <button id="clear-completed-task">
+                        <span>Clear completed</span>
+                    </button>
+                </div>
+                <div class="line">
+
+                </div>
+
+            </div>
+            <!-- Display Section of the list -->
+            <div id="display-container" >
+
+                <ul id="list">
+                    <!-- <li>
+                        <div class="complete-icon">
+                            <i class="far fa-circle"></i>
+                        </div>
+                        <div class="list-content">
+                            <span>Drink Coffee</span>
+                        </div>
+                        
+                        <div class="delete-list-item">
+                            <i class="far fa-times-circle"></i>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="complete-icon">
+                            <i class="far fa-circle"></i>
+                        </div>
+                        <div class="list-content">
+                            <span>Drink Coffee</span>
+                        </div>
+                        
+                        <div class="delete-list-item">
+                            <i class="far fa-times-circle"></i>
+                        </div>
+                        
+                    </li>
+                    
+                    <li>
+                        <div class="complete-icon">
+                            <i class="far fa-circle"></i>
+                        </div>
+                        <div class="list-content">
+                            <span>Drink Coffee</span>
+                        </div>
+                        
+                        <div class="delete-list-item">
+                            <i class="far fa-times-circle"></i>
+                        </div>
+                        
+                    </li> -->
+                    
+                </ul>
+
+
+            </div>
+            <!-- Footer Section -->
+
+            <div id="footer-section">
+
+                <!-- Shows the number of tasks yet to complete -->
+                <div id="flex-box">
+                    <div id="number-of-tasks">
+                        <span>3 tasks left</span>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+            
+
+
+
+        </main>
+
+        <div class="img-credits">
+            <span>Photo by </span>
+            <a href="https://unsplash.com/@l_pavlicic" target="_blank">
+                lovro-pavlicic
+            </a>
+        </div>
+
+        <script src="./script.js" ></script>
+
+    </body>
+</html>

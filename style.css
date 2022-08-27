@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url(./images/lovro-pavlicic-741MfdrVr_I-unsplash.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+/* background image credits */
+.img-credits{
+    position: fixed;
+    bottom: 35px;
+    left: 45px;
+    
+    font-family: sans-serif;
+}
+.img-credits span{
+    color: whitesmoke;
+    font-size: 1.1rem;
+}
+
+.img-credits a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: lightgrey;
+}
+.img-credits a:hover{
+    color: grey;
+}
+
+/* Styling the main section */
+main{
+    margin: 5%;
+    margin-left: 30%;
+    width: 40%;
+    background-color: rgba(0,0,0,0.4);
+    opacity: 0.9;
+    border-radius: 8px;
+    box-shadow: 1px 1px 7px 2px;
+    min-height: 200px;
+
+}
+/* Styling the text-box */
+#text-box{
+    position: relative;
+}
+#text-box form input{
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+    position: relative;
+    height: 3rem;
+    width: 95%;
+    border-radius: 5px;
+    margin: 15px 15px 2px 15px;
+    font-size: 1.5rem;
+    padding: 7px;
+
+}
+#submit-btn{
+    border: none;
+    background-color: white;
+    position: absolute;
+    font-size: 1.5rem;
+    background: none;
+    cursor: pointer;
+    right: 3%;
+    top: 24%;
+}
+/* Styling the text-box-functions */
+#text-box-functions{
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 1px solid rgb(116, 114, 114); */
+}
+#text-box-functions button{
+    background: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+#text-box-functions button i{
+    font-size: 1rem;
+}
+.line{
+    border-top: 1px solid rgb(192, 192, 192);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* Styling the list container  */
+#display-container{
+    width: 95%;
+    /* margin-left: 15px; */
+    max-height: 255px;
+    min-height: 200px;
+    overflow: scroll;
+    margin-top: 5px;
+    
+}
+#display-container::-webkit-scrollbar{
+    display: none;
+}
+
+#display-container ul li{
+    list-style-type: none;
+    color: lightgrey;
+    margin: 7px 0px;
+    font-family: sans-serif;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+/* Styling the list */
+ul li{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    padding: 3px 0px;
+}
+.complete-icon{
+    cursor: pointer;
+}
+.delete-list-item{
+    display: none;
+    cursor: pointer;
+}
+ul li:hover .delete-list-item{
+    display: flex;
+    
+}
+/* Styling the class checked (When the task is done) */
+.checked{
+    text-decoration: line-through;
+}
+
+
+/* Styling the footer section*/
+#footer-section{
+    width: 95%;
+    position: relative;
+    margin-left: 15px;
+    margin-top: 5px;
+    border-top: 1px solid rgb(192, 192, 192);
+    height: 30px;
+    padding: 10px 5px 0px 5px;
+}
+#flex-box{
+    display: flex;
+    /* justify-content: space-between; */
+}
+#number-of-tasks{
+    color: white;
+    font-family: sans-serif;
+}
+#menu-tabs{
+    position: absolute;
+    right: 0;
+    display: grid;
+    width: 38%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.menu-function{
+    color: grey;
+    font-family: sans-serif;
+    margin-left: 10px;
+}
